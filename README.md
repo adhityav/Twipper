@@ -3,7 +3,11 @@
 This is the sample application for
 [*Ruby on Rails Tutorial:
 Learn Web Development with Rails*](http://www.railstutorial.org/)
-by [Michael Hartl](http://www.michaelhartl.com/).
+by [Adhitya Vadivel](http://adhityavadivel.weebly.com/)
+and [Michael Hartl](http://www.michaelhartl.com/).
+
+## You can access the app here:
+https://sample-app-adhityav.herokuapp.com/
 
 ## License
 
