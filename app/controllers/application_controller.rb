@@ -1,7 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+  include SessionsHelper
 
   def title
-    render html: "SAMPLE APP"
+    render html: "Twipper"
   end
 end
