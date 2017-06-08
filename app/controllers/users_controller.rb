@@ -9,6 +9,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page])
+
   end
 
   def new
@@ -20,7 +22,7 @@ class UsersController < ApplicationController
     if @user.save
       log_in @user
       flash[:success] = "Welcome to Twipper!"
-      redirect_to @user
+      redirect_back_or @user
     else
       render 'new'
     end
